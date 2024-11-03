@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan's Creative Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'San Francisco', sans-serif; /* Setting the font to San Francisco */
+            background-color: #393636; /* Dark background color */
+            color: #ffffff; /* Default text color set to white */
+            position: relative; /* Allows positioning of the navigation */
+            text-align: center; /* Center text for all elements in the body */
+        }
+
+        .text-container {
+            padding: 20px; /* Adds some space around the text */
+            max-width: 3000px; /* Sets a maximum width for readability */
+            margin: auto; /* Centers the container */
+        }
+
+        p {
+            margin-top: 0; /* Removes the top margin for paragraphs */
+            color: #ffffff; /* Ensures the text is white */
+            font-weight: normal; /* Ensure font weight is normal */
+            font-size: 1em; /* Set a base font size */
+        }
+
+        /* Navigation Menu Styles */
+        .nav-menu {
+            position: absolute; /* Positioning the menu */
+            top: 20px; /* Distance from the top */
+            right: 20px; /* Distance from the right */
+            display: flex; /* Align items in a row */
+            gap: 20px; /* Space between links */
+        }
+
+        .nav-menu a {
+            color: #ffffff; /* White text color for links */
+            text-decoration: none; /* Remove underline */
+            font-size: 16px; /* Font size for the links */
+        }
+
+        .nav-menu a:hover {
+            color: #ffcc00; /* Change color on hover */
+        }
+
+        /* Container with background image */
+        .background {
+            position: relative;
+            height: 100vh; /* Full viewport height */
+            background-image: url("images/Cover.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Profile picture box */
+        .profile-box {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Profile picture image styling */
+        .profile-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Light text style for specific sections */
+        .light-text {
+            color: #cccccc; /* Slightly lighter text for the paragraph */
+        }
+
+        /* Brand Boxes Section */
+        .brand-section {
+            display: flex; /* Align boxes in a row */
+            justify-content: center; /* Center boxes horizontally */
+            flex-wrap: wrap; /* Allow wrapping to next line if needed */
+            margin: 40px 0; /* Add spacing above and below */
+        }
+
+        .brand-box {
+            width: 150px; /* Fixed width for brand boxes */
+            height: 150px; /* Fixed height for brand boxes */
+            background-color: #444; /* Dark background for boxes */
+            margin: 10px; /* Space between boxes */
+            border-radius: 10px; /* Rounded corners */
+            display: flex; /* Center image inside */
+            align-items: center; /* Center image vertically */
+            justify-content: center; /* Center image horizontally */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        }
+
+        .brand-box img {
+            max-width: 80%; /* Scale images down if too big */
+            max-height: 80%; /* Scale images down if too big */
+            object-fit: contain; /* Maintain aspect ratio */
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #222; /* Dark footer background */
+            color: #ffffff; /* White text color */
+            padding: 20px; /* Padding for the footer */
+            text-align: center; /* Center text in the footer */
+        }
+
+        .footer a {
+            color: #ffcc00; /* Footer link color */
+            text-decoration: none; /* Remove underline */
+            margin: 0 10px; /* Spacing between links */
+        }
+
+        .social-logos img {
+            width: 24px; /* Size for social media icons */
+            height: 24px; /* Size for social media icons */
+            margin: 0 5px; /* Spacing between icons */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Section with Profile Picture -->
+    <div class="background">
+        <div class="profile-box">
+            <img src="/Images/P1311542.jpg" alt="Profile Picture">
+        </div>
+    </div>
+
+    <!-- Text Section Below Background -->
+    <div class="text-container">
+        <h2>Crafting Visual Stories with Precision and Passion.</h2>
+    </div>
+    
+    <div class="text-container">
+        <h3>Welcome to my Portfolio!</h3>
+        <div class="text-container light-text">
+            <p>
+                I specialize in creating impactful video and graphic content, blending creativity with strategic insight. 
+                As the creator behind the "Artistic Features" YouTube channel and an active contributor to "Satrang CWRU" 
+                and “Weatherhead School of Management,” I produce high-quality visuals that engage diverse audiences. 
+                My work, backed by an MBA in Business Analytics and Digital Marketing, showcases my ability to craft 
+                compelling stories that deliver results. I bring a unique mix of artistic vision and analytical skills 
+                to every project, ensuring standout content across platforms.
+            </p>
+        </div>
+    </div>
+
+    <!-- Brands Section -->
+    <div class="text-container">
+        <h2>Brands i have worked with</h2>
+    <div class="brand-section">
+        <div class="brand-box">
+            <img src="Images/Red_and_Beige_Bold_Typography_Cosmetic_Brand_Logo.png" alt="Brand 1">
+        </div>
+        <div class="brand-box">
+            <img src="Images/CWRU-WSOM-blue-logo.jpg" alt="Brand 2">
+        </div>
+        <div class="brand-box">
+            <img src="Images/Case-Western-Reserve-University-School-of-Medicine-Interview-Prep.jpg" alt="Brand 3">
+        </div>
+        <div class="brand-box">
+            <img src="Images/image.jpg" alt="Brand 4">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>© 2024 Artisticfeatures| 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Cookie Settings</a>
+        </p>
+        <div class="social-logos">
+            <a href="#"><img src="images/twitter-logo.png" alt="Twitter"></a>
+            <a href="#"><img src="images/linkedin-logo.png" alt="LinkedIn"></a>
+            <a href="#"><img src="images/instagram-logo.png" alt="Instagram"></a>
+        </div>
+    </div>
+
+    <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+    </div>
+
+</body>
+</html>
